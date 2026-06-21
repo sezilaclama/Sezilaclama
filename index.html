@@ -1,88 +1,385 @@
-<!-- HİZMET BÖLGELERİ -->
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
 
-<div class="card">
-<h2>📍 Hizmet Bölgelerimiz</h2>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>
-İstanbul genelinde hizmet vermekteyiz:
-</p>
+<title>SEZ İlaçlama | İstanbul Profesyonel İlaçlama Hizmeti</title>
 
-<ul>
-<li>Esenyurt</li>
-<li>Beylikdüzü</li>
-<li>Avcılar</li>
-<li>Küçükçekmece</li>
-<li>Başakşehir</li>
-<li>Bahçelievler</li>
-<li>Bakırköy</li>
-<li>Büyükçekmece</li>
-<li>Silivri</li>
-</ul>
+<meta name="description" content="SEZ İlaçlama İstanbul genelinde hamam böceği, fare, pire, karınca ve tahtakurusu ilaçlama hizmetleri sunmaktadır.">
+<meta name="keywords" content="istanbul ilaçlama, esenyurt ilaçlama, beylikdüzü ilaçlama, fare ilaçlama, hamam böceği ilaçlama, pire ilaçlama, karınca ilaçlama, tahtakurusu ilaçlama">
+<meta name="author" content="SEZ İlaçlama">
 
-</div>
+<meta property="og:title" content="SEZ İlaçlama">
+<meta property="og:description" content="İstanbul Genelinde Profesyonel İlaçlama Hizmeti">
+<meta property="og:type" content="website">
 
-<!-- NEDEN BİZ -->
+<style>
 
-<div class="card">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
 
-<h2>⭐ Neden SEZ İlaçlama?</h2>
+body{
+background:#f4f7fb;
+color:#333;
+}
 
-<ul>
-<li>✔ Profesyonel ekip</li>
-<li>✔ Kalıcı çözümler</li>
-<li>✔ Son teknoloji ekipmanlar</li>
-<li>✔ Uygun fiyat</li>
-<li>✔ Hızlı servis</li>
-<li>✔ İstanbul geneli hizmet</li>
-</ul>
+header{
+background:linear-gradient(135deg,#0f766e,#14b8a6);
+color:white;
+padding:100px 20px;
+text-align:center;
+}
 
-</div>
+.logo{
+font-size:45px;
+font-weight:bold;
+margin-bottom:15px;
+}
 
-<!-- GOOGLE HARİTA -->
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
 
-<div class="card">
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+}
 
-<h2>🗺️ Konum</h2>
+.cta{
+display:inline-block;
+margin-top:30px;
+background:white;
+color:#0f766e;
+padding:16px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
 
-<p>
-İstanbul genelinde hizmet vermekteyiz.
-</p>
+.cta:hover{
+transform:translateY(-3px);
+}
 
-</div>
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
 
-<!-- SEO METNİ -->
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+margin-bottom:25px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
 
-<div class="card">
+.card h2{
+color:#0f766e;
+margin-bottom:20px;
+}
 
-<h2>İstanbul İlaçlama Hizmeti</h2>
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-<p>
-SEZ İlaçlama olarak İstanbul genelinde hamam böceği,
-fare, pire, karınca ve tahtakurusu ilaçlama hizmetleri
-sunuyoruz. Ev, iş yeri, apartman ve tüm yaşam alanlarında
-profesyonel çözümler üretmekteyiz.
-</p>
+.feature{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
 
-</div>
+.feature:hover{
+transform:translateY(-5px);
+}
 
-<!-- WHATSAPP BUTONU -->
+.feature h3{
+margin:15px 0;
+color:#0f766e;
+}
 
-<a href="https://wa.me/905431782827"
-style="
+.service{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.service h3{
+margin-bottom:10px;
+color:#0f766e;
+}
+
+.review{
+padding:20px;
+background:#f8fafc;
+border-left:5px solid #14b8a6;
+margin-bottom:15px;
+border-radius:10px;
+}
+
+.badge{
+display:inline-block;
+background:#14b8a6;
+color:white;
+padding:10px 20px;
+border-radius:50px;
+margin:5px;
+font-weight:bold;
+}
+
+footer{
+background:#0f766e;
+color:white;
+text-align:center;
+padding:35px;
+margin-top:50px;
+}
+
+.whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:15px 20px;
+padding:15px 25px;
 border-radius:50px;
-font-size:20px;
 text-decoration:none;
 font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,.3);
-z-index:9999;
-">
+font-size:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+z-index:999;
+}
+
+.call{
+position:fixed;
+bottom:85px;
+right:20px;
+background:#0f766e;
+color:white;
+padding:15px 25px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+z-index:999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"SEZ İlaçlama",
+"telephone":"+905431782827",
+"areaServed":"İstanbul",
+"description":"Profesyonel ilaçlama hizmetleri",
+"url":"https://sezilaclama.github.io/Sezilaclama/"
+}
+</script>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+🛡️ SEZ İLAÇLAMA
+</div>
+
+<div class="hero">
+
+<span class="badge">✔ Aynı Gün Servis</span>
+<span class="badge">✔ İstanbul Geneli</span>
+<span class="badge">✔ Kalıcı Çözüm</span>
+
+<h1>
+İstanbul'da Profesyonel İlaçlama Hizmeti
+</h1>
+
+<p>
+Hamam böceği, fare, pire, karınca ve tahtakurusuna karşı
+etkili, güvenilir ve kalıcı çözümler sunuyoruz.
+Ev ve iş yerleriniz için uzman ekip desteği.
+</p>
+
+<a href="https://wa.me/905431782827" class="cta">
+💬 WhatsApp'tan Teklif Al
+</a>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>⭐ Neden SEZ İlaçlama?</h2>
+
+<div class="grid">
+
+<div class="feature">
+<h3>👨‍🔧 Uzman Kadro</h3>
+<p>Deneyimli ekip ile profesyonel hizmet.</p>
+</div>
+
+<div class="feature">
+<h3>⚡ Hızlı Servis</h3>
+<p>İstanbul genelinde hızlı ulaşım.</p>
+</div>
+
+<div class="feature">
+<h3>🛡️ Kalıcı Çözüm</h3>
+<p>Zararlılara karşı etkili uygulamalar.</p>
+</div>
+
+<div class="feature">
+<h3>💰 Uygun Fiyat</h3>
+<p>Bütçe dostu fiyat politikası.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🪳 Hizmetlerimiz</h2>
+
+<div class="grid">
+
+<div class="service">
+<h3>Hamam Böceği İlaçlama</h3>
+<p>Kalıcı ve etkili mücadele.</p>
+</div>
+
+<div class="service">
+<h3>Fare İlaçlama</h3>
+<p>Ev ve iş yerleri için profesyonel çözüm.</p>
+</div>
+
+<div class="service">
+<h3>Pire İlaçlama</h3>
+<p>Sağlıklı yaşam alanları oluşturuyoruz.</p>
+</div>
+
+<div class="service">
+<h3>Karınca İlaçlama</h3>
+<p>Koloni bazlı uygulamalar.</p>
+</div>
+
+<div class="service">
+<h3>Tahtakurusu İlaçlama</h3>
+<p>Uzman ekipmanlarla etkili sonuç.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📍 Hizmet Bölgelerimiz</h2>
+
+<p>
+Esenyurt, Beylikdüzü, Avcılar, Küçükçekmece,
+Başakşehir, Bahçelievler, Bakırköy,
+Büyükçekmece, Silivri ve İstanbul'un tüm ilçeleri.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Müşteri Yorumları</h2>
+
+<div class="review">
+★★★★★ Çok hızlı geldiler ve sorunumuz tamamen çözüldü.
+</div>
+
+<div class="review">
+★★★★★ Profesyonel ve güvenilir hizmet.
+</div>
+
+<div class="review">
+★★★★★ Fiyat performans açısından çok memnun kaldık.
+</div>
+
+</div>
+
+<div class="card" style="text-align:center;">
+
+<h2>🚨 Acil İlaçlama Hizmeti</h2>
+
+<p>
+Zararlılarla mücadelede vakit kaybetmeyin.
+Hemen bizimle iletişime geçin.
+</p>
+
+<br>
+
+<a href="tel:+905431782827" class="cta">
+📞 Hemen Ara
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>SEZ İLAÇLAMA</h3>
+
+<p>
+İstanbul Genelinde Profesyonel İlaçlama Hizmetleri
+</p>
+
+<p>
+📞 0543 178 28 27
+</p>
+
+</footer>
+
+<a class="call" href="tel:+905431782827">
+📞 Ara
+</a>
+
+<a class="whatsapp" href="https://wa.me/905431782827">
 💬 WhatsApp
 </a>
-<meta name="description"
-content="SEZ İlaçlama İstanbul genelinde hamam böceği, fare, pire, karınca ve tahtakurusu ilaçlama hizmetleri sunmaktadır.">
+
+</body>
+</html>
+```
