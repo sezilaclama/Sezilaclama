@@ -2,89 +2,114 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SEZ İlaçlama</title>
 
 <style>
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f7fa;
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f5f5;
 }
 
-.header{
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+header{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:30px;
 }
 
-.logo{
-    width:180px;
-    border-radius:10px;
+header img{
+width:180px;
+border-radius:15px;
 }
 
-.content{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
+section{
+max-width:1000px;
+margin:auto;
+padding:20px;
 }
 
 .card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:white;
+padding:25px;
+border-radius:15px;
+margin-top:20px;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
 }
 
-h1{
-    margin-top:15px;
+h1,h2{
+margin-top:0;
 }
 
-.phone{
-    font-size:22px;
-    color:#0d47a1;
-    font-weight:bold;
+.btn{
+display:inline-block;
+padding:15px 25px;
+background:#28a745;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+margin-top:10px;
 }
 
-.button{
-    display:inline-block;
-    background:#0d47a1;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:6px;
-    margin-top:15px;
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
 }
 </style>
-
 </head>
+
 <body>
 
-<div class="header">
-    <img src="sez.jpeg" class="logo">
-    <h1>SEZ İLAÇLAMA</h1>
-    <p>Profesyonel Haşere Kontrol Hizmetleri</p>
+<header>
+<img src="sez.jpeg">
+<h1>SEZ İLAÇLAMA</h1>
+<p>Profesyonel Haşere Kontrol Hizmetleri</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>📞 İletişim</h2>
+<p><b>Telefon:</b> 0543 178 28 27</p>
+<p><b>Şehir:</b> İstanbul</p>
+
+<a class="btn" href="tel:05431782827">
+Hemen Ara
+</a>
 </div>
 
-<div class="content">
-    <div class="card">
-        <h2>İstanbul İlaçlama Hizmetleri</h2>
+<div class="card">
+<h2>🛡️ Hizmetlerimiz</h2>
 
-        <p class="phone">📞 0543 178 28 27</p>
-
-        <p><b>Şehir:</b> İstanbul</p>
-
-        <p>
-        Ev, iş yeri, apartman, bahçe, depo ve tüm yaşam alanlarında
-        profesyonel ilaçlama hizmeti sunuyoruz.
-        </p>
-
-        <a class="button" href="tel:05431782827">
-            Hemen Ara
-        </a>
-    </div>
+<ul>
+<li>Hamam Böceği İlaçlama</li>
+<li>Fare İlaçlama</li>
+<li>Tahtakurusu İlaçlama</li>
+<li>Karınca İlaçlama</li>
+<li>Sivrisinek ve Sinek Mücadelesi</li>
+<li>Apartman ve İş Yeri İlaçlama</li>
+</ul>
 </div>
+
+<div class="card">
+<h2>✅ Neden Biz?</h2>
+
+<p>
+Ruhsatlı ürünler, profesyonel ekipmanlar ve garantili hizmet anlayışı ile çalışıyoruz.
+</p>
+</div>
+
+</section>
+
+<footer>
+SEZ İlaçlama | İstanbul<br>
+0543 178 28 27
+</footer>
 
 </body>
 </html>
