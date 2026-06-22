@@ -1,385 +1,121 @@
-```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SEZ İlaçlama | İstanbul Profesyonel İlaçlama Hizmeti</title>
-
-<meta name="description" content="SEZ İlaçlama İstanbul genelinde hamam böceği, fare, pire, karınca ve tahtakurusu ilaçlama hizmetleri sunmaktadır.">
-<meta name="keywords" content="istanbul ilaçlama, esenyurt ilaçlama, beylikdüzü ilaçlama, fare ilaçlama, hamam böceği ilaçlama, pire ilaçlama, karınca ilaçlama, tahtakurusu ilaçlama">
-<meta name="author" content="SEZ İlaçlama">
-
-<meta property="og:title" content="SEZ İlaçlama">
-<meta property="og:description" content="İstanbul Genelinde Profesyonel İlaçlama Hizmeti">
-<meta property="og:type" content="website">
+<title>SEZ İlaçlama | İstanbul İlaçlama Hizmetleri</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-scroll-behavior:smooth;
-}
-
 body{
-background:#f4f7fb;
-color:#333;
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
 }
 
 header{
-background:linear-gradient(135deg,#0f766e,#14b8a6);
-color:white;
-padding:100px 20px;
-text-align:center;
+    background:#0a7a35;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
 }
 
-.logo{
-font-size:45px;
-font-weight:bold;
-margin-bottom:15px;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:800px;
-margin:auto;
-font-size:20px;
-line-height:1.8;
-}
-
-.cta{
-display:inline-block;
-margin-top:30px;
-background:white;
-color:#0f766e;
-padding:16px 35px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.cta:hover{
-transform:translateY(-3px);
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:60px 20px;
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
 }
 
 .card{
-background:white;
-padding:30px;
-border-radius:18px;
-margin-bottom:25px;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-.card h2{
-color:#0f766e;
-margin-bottom:20px;
+h2{
+    color:#0a7a35;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.feature{
-background:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.feature:hover{
-transform:translateY(-5px);
-}
-
-.feature h3{
-margin:15px 0;
-color:#0f766e;
-}
-
-.service{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
-text-align:center;
-}
-
-.service h3{
-margin-bottom:10px;
-color:#0f766e;
-}
-
-.review{
-padding:20px;
-background:#f8fafc;
-border-left:5px solid #14b8a6;
-margin-bottom:15px;
-border-radius:10px;
-}
-
-.badge{
-display:inline-block;
-background:#14b8a6;
-color:white;
-padding:10px 20px;
-border-radius:50px;
-margin:5px;
-font-weight:bold;
+.btn{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:8px;
+    font-size:18px;
+    margin-top:10px;
 }
 
 footer{
-background:#0f766e;
-color:white;
-text-align:center;
-padding:35px;
-margin-top:50px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
 }
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 25px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-font-size:18px;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-z-index:999;
-}
-
-.call{
-position:fixed;
-bottom:85px;
-right:20px;
-background:#0f766e;
-color:white;
-padding:15px 25px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-z-index:999;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:34px;
-}
-
-.hero p{
-font-size:17px;
-}
-
-}
-
 </style>
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"LocalBusiness",
-"name":"SEZ İlaçlama",
-"telephone":"+905431782827",
-"areaServed":"İstanbul",
-"description":"Profesyonel ilaçlama hizmetleri",
-"url":"https://sezilaclama.github.io/Sezilaclama/"
-}
-</script>
-
 </head>
+
 <body>
 
 <header>
-
-<div class="logo">
-🛡️ SEZ İLAÇLAMA
-</div>
-
-<div class="hero">
-
-<span class="badge">✔ Aynı Gün Servis</span>
-<span class="badge">✔ İstanbul Geneli</span>
-<span class="badge">✔ Kalıcı Çözüm</span>
-
-<h1>
-İstanbul'da Profesyonel İlaçlama Hizmeti
-</h1>
-
-<p>
-Hamam böceği, fare, pire, karınca ve tahtakurusuna karşı
-etkili, güvenilir ve kalıcı çözümler sunuyoruz.
-Ev ve iş yerleriniz için uzman ekip desteği.
-</p>
-
-<a href="https://wa.me/905431782827" class="cta">
-💬 WhatsApp'tan Teklif Al
-</a>
-
-</div>
-
+    <h1>SEZ İlaçlama</h1>
+    <p>İstanbul Genelinde Profesyonel İlaçlama Hizmeti</p>
 </header>
 
-<div class="container">
+<section>
 
 <div class="card">
-
-<h2>⭐ Neden SEZ İlaçlama?</h2>
-
-<div class="grid">
-
-<div class="feature">
-<h3>👨‍🔧 Uzman Kadro</h3>
-<p>Deneyimli ekip ile profesyonel hizmet.</p>
-</div>
-
-<div class="feature">
-<h3>⚡ Hızlı Servis</h3>
-<p>İstanbul genelinde hızlı ulaşım.</p>
-</div>
-
-<div class="feature">
-<h3>🛡️ Kalıcı Çözüm</h3>
-<p>Zararlılara karşı etkili uygulamalar.</p>
-</div>
-
-<div class="feature">
-<h3>💰 Uygun Fiyat</h3>
-<p>Bütçe dostu fiyat politikası.</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>🪳 Hizmetlerimiz</h2>
-
-<div class="grid">
-
-<div class="service">
-<h3>Hamam Böceği İlaçlama</h3>
-<p>Kalıcı ve etkili mücadele.</p>
-</div>
-
-<div class="service">
-<h3>Fare İlaçlama</h3>
-<p>Ev ve iş yerleri için profesyonel çözüm.</p>
-</div>
-
-<div class="service">
-<h3>Pire İlaçlama</h3>
-<p>Sağlıklı yaşam alanları oluşturuyoruz.</p>
-</div>
-
-<div class="service">
-<h3>Karınca İlaçlama</h3>
-<p>Koloni bazlı uygulamalar.</p>
-</div>
-
-<div class="service">
-<h3>Tahtakurusu İlaçlama</h3>
-<p>Uzman ekipmanlarla etkili sonuç.</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>📍 Hizmet Bölgelerimiz</h2>
-
+<h2>Hakkımızda</h2>
 <p>
-Esenyurt, Beylikdüzü, Avcılar, Küçükçekmece,
-Başakşehir, Bahçelievler, Bakırköy,
-Büyükçekmece, Silivri ve İstanbul'un tüm ilçeleri.
+SEZ İlaçlama olarak İstanbul genelinde ev, iş yeri, apartman,
+restoran, kafe ve depolarda profesyonel haşere kontrol hizmeti sunuyoruz.
 </p>
-
 </div>
 
 <div class="card">
-
-<h2>⭐ Müşteri Yorumları</h2>
-
-<div class="review">
-★★★★★ Çok hızlı geldiler ve sorunumuz tamamen çözüldü.
+<h2>Hizmetlerimiz</h2>
+<ul>
+<li>Hamamböceği İlaçlama</li>
+<li>Fare İlaçlama</li>
+<li>Tahta Kurusu İlaçlama</li>
+<li>Pire İlaçlama</li>
+<li>Karınca İlaçlama</li>
+<li>Apartman ve İş Yeri İlaçlama</li>
+</ul>
 </div>
 
-<div class="review">
-★★★★★ Profesyonel ve güvenilir hizmet.
-</div>
-
-<div class="review">
-★★★★★ Fiyat performans açısından çok memnun kaldık.
-</div>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h2>🚨 Acil İlaçlama Hizmeti</h2>
-
+<div class="card">
+<h2>Neden Biz?</h2>
 <p>
-Zararlılarla mücadelede vakit kaybetmeyin.
-Hemen bizimle iletişime geçin.
+✔ Hızlı Servis<br>
+✔ Uygun Fiyat<br>
+✔ Garantili Uygulama<br>
+✔ İstanbul Geneli Hizmet
 </p>
+</div>
 
-<br>
+<div class="card">
+<h2>İletişim</h2>
 
-<a href="tel:+905431782827" class="cta">
-📞 Hemen Ara
+<p><strong>Telefon:</strong> 0543 178 28 27</p>
+
+<a class="btn"
+href="https://wa.me/905431782827"
+target="_blank">
+WhatsApp'tan Ulaşın
 </a>
 
 </div>
 
-</div>
+</section>
 
 <footer>
-
-<h3>SEZ İLAÇLAMA</h3>
-
-<p>
-İstanbul Genelinde Profesyonel İlaçlama Hizmetleri
-</p>
-
-<p>
-📞 0543 178 28 27
-</p>
-
+© 2026 SEZ İlaçlama - Tüm Hakları Saklıdır.
 </footer>
-
-<a class="call" href="tel:+905431782827">
-📞 Ara
-</a>
-
-<a class="whatsapp" href="https://wa.me/905431782827">
-💬 WhatsApp
-</a>
 
 </body>
 </html>
-```
