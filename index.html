@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SEZ İlaçlama | İstanbul İlaçlama ve Dezenfeksiyon</title>
+<title>SEZ İlaçlama | İstanbul İlaçlama ve Dezenfeksiyon Hizmetleri</title>
 
-<meta name="description" content="SEZ İlaçlama İstanbul genelinde hamam böceği, fare, tahta kurusu, pire, kene ilaçlama ve dezenfeksiyon hizmetleri sunmaktadır.">
+<meta name="description" content="SEZ İlaçlama İstanbul genelinde hamam böceği, fare, pire, tahta kurusu, kene ve dezenfeksiyon hizmetleri sunmaktadır.">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -22,15 +23,16 @@ color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#0d2b45,#1c5f2b);
+background:linear-gradient(135deg,#0d2b45,#2d7d2f);
 color:white;
 text-align:center;
-padding:70px 20px;
+padding:60px 20px;
 }
 
 header h1{
 font-size:42px;
 margin-bottom:10px;
+animation:fadeIn 2s;
 }
 
 header p{
@@ -44,51 +46,62 @@ display:block;
 
 .section{
 padding:40px 20px;
-max-width:1100px;
+max-width:1200px;
 margin:auto;
 }
 
-h2{
+.section h2{
 text-align:center;
-margin-bottom:20px;
+margin-bottom:25px;
 color:#0d2b45;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
+gap:20px;
 }
 
 .card{
 background:white;
 padding:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-text-align:center;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+transition:.3s;
 }
 
 .card:hover{
 transform:translateY(-5px);
-transition:0.3s;
+}
+
+.why{
+background:#ffffff;
 }
 
 .contact{
+text-align:center;
 background:#0d2b45;
 color:white;
-text-align:center;
-padding:40px 20px;
+padding:50px 20px;
 }
 
 .btn{
 display:inline-block;
-background:#25D366;
-color:white;
 padding:15px 25px;
-border-radius:30px;
+margin:10px;
 text-decoration:none;
+border-radius:10px;
 font-weight:bold;
-margin-top:15px;
+}
+
+.call{
+background:#2d7d2f;
+color:white;
+}
+
+.whatsapp{
+background:#25d366;
+color:white;
 }
 
 footer{
@@ -97,6 +110,18 @@ color:white;
 text-align:center;
 padding:20px;
 }
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
 </style>
 </head>
 
@@ -104,7 +129,7 @@ padding:20px;
 
 <header>
 <h1>SEZ İlaçlama</h1>
-<p>İstanbul Genelinde Profesyonel İlaçlama ve Dezenfeksiyon Hizmetleri</p>
+<p>İstanbul Geneli Profesyonel İlaçlama ve Dezenfeksiyon Hizmetleri</p>
 </header>
 
 <div class="hero">
@@ -118,52 +143,83 @@ padding:20px;
 
 <div class="card">
 <h3>Hamam Böceği İlaçlama</h3>
-<p>Kalıcı ve etkili çözümler.</p>
+<p>Eviniz ve iş yeriniz için etkili çözümler.</p>
 </div>
 
 <div class="card">
 <h3>Fare İlaçlama</h3>
-<p>Ev ve işyerleri için profesyonel uygulama.</p>
+<p>Kalıcı ve güvenli uygulamalar.</p>
 </div>
 
 <div class="card">
 <h3>Tahta Kurusu İlaçlama</h3>
-<p>Uzman ekip ve garantili hizmet.</p>
+<p>Garantili profesyonel mücadele.</p>
 </div>
 
 <div class="card">
 <h3>Pire İlaçlama</h3>
-<p>Hızlı ve etkili müdahale.</p>
+<p>Hızlı ve etkili sonuçlar.</p>
 </div>
 
 <div class="card">
 <h3>Kene İlaçlama</h3>
-<p>Sağlığınızı koruyan çözümler.</p>
+<p>Sağlığınızı koruyan uygulamalar.</p>
 </div>
 
 <div class="card">
 <h3>Dezenfeksiyon</h3>
-<p>Ev, işyeri ve işletmeler için profesyonel uygulama.</p>
+<p>Ev, işyeri ve kurumsal alanlar için.</p>
 </div>
 
 </div>
 </section>
 
+<section class="section why">
+<h2>Neden SEZ İlaçlama?</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>7/24 Destek</h3>
+</div>
+
+<div class="card">
+<h3>İstanbul Geneli Hizmet</h3>
+</div>
+
+<div class="card">
+<h3>Garantili Uygulama</h3>
+</div>
+
+<div class="card">
+<h3>Uygun Fiyat</h3>
+</div>
+
+</div>
+
+</section>
+
 <section class="contact">
+
 <h2>Bize Ulaşın</h2>
 
-<p><strong>Telefon:</strong> 0543 178 28 27</p>
+<p style="margin-top:15px;font-size:24px;">
+📞 0543 178 28 27
+</p>
 
-<p><strong>Web:</strong> sezilaclama.github.io/Sezilaclama</p>
+<a class="btn call" href="tel:+905431782827">
+Hemen Ara
+</a>
 
-<a class="btn" href="https://wa.me/905431782827">
-WhatsApp'tan Yaz
+<a class="btn whatsapp"
+href="https://wa.me/905431782827">
+WhatsApp
 </a>
 
 </section>
 
 <footer>
-© 2026 SEZ İlaçlama | İstanbul
+© 2026 SEZ İlaçlama | İstanbul İlaçlama ve Dezenfeksiyon Hizmetleri
 </footer>
 
 </body>
