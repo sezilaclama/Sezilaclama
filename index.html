@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SEZ İlaçlama | İstanbul İlaçlama ve Dezenfeksiyon Hizmetleri</title>
+<title>SEZ İLAÇLAMA | İstanbul İlaçlama ve Dezenfeksiyon Hizmetleri</title>
 
-<meta name="description" content="SEZ İlaçlama İstanbul genelinde hamam böceği, fare, pire, tahta kurusu, kene ve dezenfeksiyon hizmetleri sunmaktadır.">
+<meta name="description" content="SEZ İlaçlama İstanbul genelinde hamam böceği, fare, pire, tahta kurusu, karınca, kene ilaçlama ve dezenfeksiyon hizmetleri sunmaktadır.">
 
 <style>
 
@@ -14,29 +14,29 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 }
 
 body{
-background:#f5f5f5;
+background:#f7f7f7;
 color:#333;
+line-height:1.6;
 }
 
 header{
-background:linear-gradient(135deg,#0d2b45,#2d7d2f);
+background:linear-gradient(135deg,#0c2340,#1f7a3d);
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:70px 20px;
 }
 
 header h1{
-font-size:42px;
+font-size:48px;
 margin-bottom:10px;
-animation:fadeIn 2s;
 }
 
 header p{
-font-size:18px;
+font-size:20px;
 }
 
 .hero img{
@@ -44,19 +44,38 @@ width:100%;
 display:block;
 }
 
+.btn{
+display:inline-block;
+padding:15px 30px;
+margin:10px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn-call{
+background:white;
+color:#0c2340;
+}
+
+.btn-whatsapp{
+background:#25D366;
+color:white;
+}
+
 .section{
-padding:40px 20px;
 max-width:1200px;
 margin:auto;
+padding:50px 20px;
 }
 
-.section h2{
+.section-title{
 text-align:center;
-margin-bottom:25px;
-color:#0d2b45;
+margin-bottom:30px;
+color:#0c2340;
 }
 
-.services{
+.cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
@@ -64,44 +83,40 @@ gap:20px;
 
 .card{
 background:white;
-padding:20px;
+padding:25px;
 border-radius:15px;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
-transition:.3s;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.card:hover{
-transform:translateY(-5px);
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
 }
 
-.why{
-background:#ffffff;
+.gallery img{
+width:100%;
+border-radius:10px;
 }
 
 .contact{
+background:#0c2340;
+color:white;
 text-align:center;
-background:#0d2b45;
-color:white;
-padding:50px 20px;
+padding:60px 20px;
 }
 
-.btn{
-display:inline-block;
-padding:15px 25px;
-margin:10px;
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
 text-decoration:none;
-border-radius:10px;
 font-weight:bold;
-}
-
-.call{
-background:#2d7d2f;
-color:white;
-}
-
-.whatsapp{
-background:#25d366;
-color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 
 footer{
@@ -111,25 +126,25 @@ text-align:center;
 padding:20px;
 }
 
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>SEZ İlaçlama</h1>
+
+<h1>SEZ İLAÇLAMA</h1>
+
 <p>İstanbul Geneli Profesyonel İlaçlama ve Dezenfeksiyon Hizmetleri</p>
+
+<a href="tel:+905431782827" class="btn btn-call">
+📞 Hemen Ara
+</a>
+
+<a href="https://wa.me/905431782827" class="btn btn-whatsapp">
+WhatsApp
+</a>
+
 </header>
 
 <div class="hero">
@@ -137,89 +152,132 @@ transform:translateY(0);
 </div>
 
 <section class="section">
-<h2>Hizmetlerimiz</h2>
 
-<div class="services">
+<h2 class="section-title">Hizmetlerimiz</h2>
+
+<div class="cards">
 
 <div class="card">
-<h3>Hamam Böceği İlaçlama</h3>
-<p>Eviniz ve iş yeriniz için etkili çözümler.</p>
+<h3>🪳 Hamam Böceği İlaçlama</h3>
+<p>Profesyonel ve etkili çözümler.</p>
 </div>
 
 <div class="card">
-<h3>Fare İlaçlama</h3>
-<p>Kalıcı ve güvenli uygulamalar.</p>
+<h3>🐀 Fare İlaçlama</h3>
+<p>Ev ve iş yerleri için güvenli uygulama.</p>
 </div>
 
 <div class="card">
-<h3>Tahta Kurusu İlaçlama</h3>
-<p>Garantili profesyonel mücadele.</p>
+<h3>🛏️ Tahta Kurusu İlaçlama</h3>
+<p>Kalıcı mücadele yöntemleri.</p>
 </div>
 
 <div class="card">
-<h3>Pire İlaçlama</h3>
-<p>Hızlı ve etkili sonuçlar.</p>
+<h3>🐜 Karınca İlaçlama</h3>
+<p>Hızlı ve etkili müdahale.</p>
 </div>
 
 <div class="card">
-<h3>Kene İlaçlama</h3>
+<h3>🦟 Pire ve Kene İlaçlama</h3>
 <p>Sağlığınızı koruyan uygulamalar.</p>
 </div>
 
 <div class="card">
-<h3>Dezenfeksiyon</h3>
-<p>Ev, işyeri ve kurumsal alanlar için.</p>
+<h3>🧴 Dezenfeksiyon Hizmetleri</h3>
+<p>Ev ve iş yerleri için hijyen çözümleri.</p>
 </div>
 
 </div>
+
 </section>
 
-<section class="section why">
-<h2>Neden SEZ İlaçlama?</h2>
+<section class="section">
 
-<div class="services">
+<h2 class="section-title">Neden SEZ İlaçlama?</h2>
+
+<div class="cards">
+
+<div class="card">✅ İstanbul Geneli Hizmet</div>
+<div class="card">✅ Hızlı Randevu</div>
+<div class="card">✅ Profesyonel Ekipman</div>
+<div class="card">✅ Uygun Fiyat</div>
+<div class="card">✅ Müşteri Memnuniyeti</div>
+<div class="card">✅ Etkili Uygulama</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Fotoğraf Galerisi</h2>
+
+<div class="gallery">
+
+<img src="sez.jpeg">
+<img src="sez1.jpeg">
+<img src="sez2.jpeg">
+<img src="sez3.jpeg">
+<img src="sez4.jpeg">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Müşteri Yorumları</h2>
+
+<div class="cards">
 
 <div class="card">
-<h3>7/24 Destek</h3>
+⭐⭐⭐⭐⭐<br><br>
+Hızlı ve temiz hizmet aldık.
 </div>
 
 <div class="card">
-<h3>İstanbul Geneli Hizmet</h3>
+⭐⭐⭐⭐⭐<br><br>
+Hamam böceği problemimiz tamamen çözüldü.
 </div>
 
 <div class="card">
-<h3>Garantili Uygulama</h3>
+⭐⭐⭐⭐⭐<br><br>
+Güvenilir ve ilgili ekip.
 </div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Hizmet Bölgeleri</h2>
 
 <div class="card">
-<h3>Uygun Fiyat</h3>
-</div>
-
+Avcılar, Beylikdüzü, Esenyurt, Küçükçekmece, Başakşehir, Bahçelievler, Bakırköy, Şişli, Beşiktaş, Kadıköy, Ataşehir, Ümraniye ve İstanbul'un tüm ilçeleri.
 </div>
 
 </section>
 
 <section class="contact">
 
-<h2>Bize Ulaşın</h2>
+<h2>İletişim</h2>
 
-<p style="margin-top:15px;font-size:24px;">
-📞 0543 178 28 27
-</p>
+<p>📞 0543 178 28 27</p>
 
-<a class="btn call" href="tel:+905431782827">
-Hemen Ara
-</a>
+<p>📧 pestilaclama34@gmail.com</p>
 
-<a class="btn whatsapp"
+<p>📍 İstanbul Geneli Hizmet</p>
+
+</section>
+
+<a class="whatsapp-float"
 href="https://wa.me/905431782827">
 WhatsApp
 </a>
 
-</section>
-
 <footer>
-© 2026 SEZ İlaçlama | İstanbul İlaçlama ve Dezenfeksiyon Hizmetleri
+© 2026 SEZ İLAÇLAMA | Tüm Hakları Saklıdır
 </footer>
 
 </body>
