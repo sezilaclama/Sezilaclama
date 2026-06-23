@@ -4,12 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SEZ İlaçlama | İstanbul İlaçlama ve Dezenfeksiyon</title>
+<title>SEZ İlaçlama | İstanbul İlaçlama Hizmetleri</title>
 
-<meta name="description" content="SEZ İlaçlama İstanbul genelinde hamamböceği, fare, pire, tahta kurusu ilaçlama ve dezenfeksiyon hizmetleri sunmaktadır.">
+<meta name="description" content="SEZ İlaçlama İstanbul genelinde profesyonel ilaçlama, hamam böceği, fare, tahtakurusu, pire, kene ve dezenfeksiyon hizmetleri sunmaktadır.">
 
 <style>
-
 body{
 margin:0;
 font-family:Arial,sans-serif;
@@ -20,37 +19,23 @@ header{
 background:#0d2b45;
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:20px;
 }
 
-h1{
+header h1{
+margin:0;
 font-size:40px;
-margin-bottom:10px;
 }
 
-.hero{
-background:white;
-padding:30px;
-text-align:center;
+header p{
+font-size:18px;
 }
 
-.btn{
-display:inline-block;
-padding:15px 25px;
-margin:10px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-.tel{
-background:#0d2b45;
-color:white;
-}
-
-.wp{
-background:#25D366;
-color:white;
+.banner{
+width:100%;
+max-width:1000px;
+display:block;
+margin:auto;
 }
 
 .container{
@@ -59,94 +44,108 @@ margin:auto;
 padding:20px;
 }
 
-.box{
+.card{
 background:white;
 padding:20px;
-margin-bottom:20px;
 border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.service{
+background:#0d2b45;
+color:white;
+padding:15px;
+border-radius:8px;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
 footer{
-background:#111;
+background:#0d2b45;
 color:white;
 text-align:center;
 padding:20px;
+margin-top:30px;
 }
-
 </style>
 
 </head>
-
 <body>
 
 <header>
-
-<h1>SEZ İLAÇLAMA</h1>
-
-<p>İlaçlama • Dezenfeksiyon • Haşere Kontrol Hizmetleri</p>
-
+<h1>SEZ İlaçlama</h1>
+<p>İstanbul Genelinde Profesyonel İlaçlama ve Dezenfeksiyon Hizmetleri</p>
 </header>
 
-<section class="hero">
-
-<h2>İstanbul Genelinde Profesyonel Hizmet</h2>
-
-<a href="tel:+905431782827" class="btn tel">
-📞 0543 178 28 27
-</a>
-
-<a href="https://wa.me/905431782827" class="btn wp">
-WhatsApp
-</a>
-
-</section>
+<img src="file_000000002868724684fb15322854446e.png" class="banner">
 
 <div class="container">
 
-<div class="box">
+<div class="card">
+<h2>Hakkımızda</h2>
+<p>
+SEZ İlaçlama olarak İstanbul genelinde hamam böceği, fare, pire, kene,
+tahtakurusu ve dezenfeksiyon hizmetleri sunuyoruz.
+Profesyonel ekip ve kaliteli ekipmanlarla hizmet vermekteyiz.
+</p>
+</div>
 
+<div class="card">
 <h2>Hizmetlerimiz</h2>
 
-<ul>
-<li>Hamamböceği İlaçlama</li>
-<li>Fare İlaçlama</li>
-<li>Pire İlaçlama</li>
-<li>Karınca İlaçlama</li>
-<li>Tahta Kurusu İlaçlama</li>
-<li>Dezenfeksiyon Hizmetleri</li>
-</ul>
+<div class="services">
+<div class="service">Hamam Böceği İlaçlama</div>
+<div class="service">Fare İlaçlama</div>
+<div class="service">Tahtakurusu İlaçlama</div>
+<div class="service">Pire İlaçlama</div>
+<div class="service">Kene İlaçlama</div>
+<div class="service">Dezenfeksiyon</div>
+</div>
 
 </div>
 
-<div class="box">
-
-<h2>Hakkımızda</h2>
-
-<p>
-SEZ İlaçlama olarak İstanbul genelinde ev, iş yeri, restoran, kafe, apartman ve depolarda profesyonel ilaçlama ve dezenfeksiyon hizmetleri sunuyoruz.
-</p>
-
-</div>
-
-<div class="box">
-
+<div class="card">
 <h2>İletişim</h2>
 
-<p>Telefon: 0543 178 28 27</p>
+<p><b>Telefon:</b> 0543 178 28 27</p>
 
-<p>E-posta: pestilaclama34@gmail.com</p>
+<p><b>Web Site:</b><br>
+https://sezilaclama.github.io/Sezilaclama/
+</p>
 
-<p>İstanbul Geneli Hizmet</p>
+<p><b>Hizmet Bölgesi:</b> İstanbul Geneli</p>
 
 </div>
 
 </div>
+
+<a class="whatsapp"
+href="https://wa.me/905431782827"
+target="_blank">
+WhatsApp
+</a>
 
 <footer>
-
-© SEZ İlaçlama
-
+© 2026 SEZ İlaçlama - Tüm Hakları Saklıdır
 </footer>
 
 </body>
