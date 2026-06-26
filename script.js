@@ -3,6 +3,8 @@ function hesapla() {
 
     const mekan = document.getElementById("mekan").value;
     const zararli = document.getElementById("zararli").value;
+    const zararliFiyat = Number(document.getElementById("zararli").value);
+const ilceFiyat = Number(document.getElementById("ilce").value);
     const alan = Number(document.getElementById("alan").value);
 
     let fiyat = 0;
@@ -17,7 +19,9 @@ function hesapla() {
         return;
     }
 
-    fiyat += alan;
+  fiyat += alan;
+  fiyat += zararliFiyat;
+  fiyat += ilceFiyat;
 
     const formatliFiyat = fiyat.toLocaleString("tr-TR");
 
@@ -27,7 +31,12 @@ function hesapla() {
 Web sitenizdeki fiyat hesaplama aracını kullandım.
 
 🏠 Mekan: ${mekan === "ev" ? "Ev" : "İş Yeri"}
-🪳 Zararlı: ${zararli}
+🪳 Zararlı: ${
+const zararliFiyat = Number(document.getElementById("zararli").value);
+
+const ilceFiyat = Number(document.getElementById("ilce").value);
+].text
+}
 📐 Alan: ${document.getElementById("alan").options[document.getElementById("alan").selectedIndex].text}
 
 💰 Tahmini Fiyat: ${formatliFiyat} TL
