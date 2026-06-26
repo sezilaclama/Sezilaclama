@@ -168,3 +168,43 @@ nav a{
 }
 
 }
+.hesaplama{
+    max-width:650px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.hesaplama label{
+    display:block;
+    margin-top:20px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.hesaplama select{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.hesaplama button{
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    background:#0f766e;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.hesaplama button:hover{
+    background:#0b5d57;
+}
