@@ -1,1 +1,170 @@
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#0f766e,#14b8a6);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+nav{
+    margin:25px 0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffe082;
+}
+
+.hero{
+    max-width:900px;
+    margin:auto;
+}
+
+.hero h1{
+    font-size:48px;
+    margin:25px 0;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.buton{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:16px 35px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.buton:hover{
+    transform:scale(1.05);
+}
+
+/* GENEL */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+section h2{
+    text-align:center;
+    color:#0f766e;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+/* HİZMETLER */
+
+.kartlar{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.kart{
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    text-align:center;
+    font-size:50px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.kart:hover{
+    transform:translateY(-8px);
+}
+
+.kart h3{
+    margin-top:20px;
+    font-size:22px;
+    color:#0f766e;
+}
+
+/* YORUMLAR */
+
+.yorum{
+    background:white;
+    margin:20px auto;
+    padding:25px;
+    border-left:6px solid #14b8a6;
+    border-radius:12px;
+    max-width:800px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f766e;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+/* MOBİL */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav a{
+    display:block;
+    margin:12px 0;
+}
+
+.logo{
+    font-size:30px;
+}
+
+}
