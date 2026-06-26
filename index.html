@@ -92,14 +92,49 @@ WhatsApp'tan Teklif Al
 
 <section id="hesapla">
 
-<h2>Fiyat Hesaplama</h2>
+<h2>💰 Tahmini Fiyat Hesaplama</h2>
 
-<p>
+<div class="hesaplama">
 
-Bir sonraki adımda buraya profesyonel hesaplama sistemi gelecek.
+<label>Mekan Türü</label>
 
-</p>
+<select id="mekan">
+<option value="">Seçiniz</option>
+<option value="ev">🏠 Ev</option>
+<option value="isyeri">🏢 İş Yeri</option>
+</select>
 
+<label>Zararlı Türü</label>
+
+<select id="zararli">
+<option>Hamam Böceği</option>
+<option>Fare</option>
+<option>Karınca</option>
+<option>Pire</option>
+<option>Tahtakurusu</option>
+</select>
+
+<label>Alan</label>
+
+<select id="alan">
+<option value="0">1+1</option>
+<option value="500">2+1</option>
+<option value="1000">3+1</option>
+<option value="1500">4+1</option>
+<option value="2500">Villa</option>
+</select>
+
+<button onclick="hesapla()">
+
+Fiyat Hesapla
+
+</button>
+
+<div id="sonuc"></div>
+
+</div>
+
+</section>
 </section>
 
 <section id="yorumlar">
