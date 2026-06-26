@@ -80,6 +80,11 @@ Bilgi almak istiyorum.`;
                 text-decoration:none;
                 border-radius:40px;
                 font-weight:bold;
+                📍 İlçe: ${
+document.getElementById("ilce").options[
+document.getElementById("ilce").selectedIndex
+].text
+}
                ">
                📲 WhatsApp'tan Teklif Al
             </a>
