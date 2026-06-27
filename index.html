@@ -107,19 +107,51 @@ WhatsApp'tan Teklif Al
 <label>Zararlı Türü</label>
 
 <select id="zararli">
-    <option value="0">Hamam Böceği</option>
-    <option value="500">Fare (+500 TL)</option>
-    <option value="250">Karınca (+250 TL)</option>
-    <option value="750">Pire (+750 TL)</option>
-    <option value="1000">Tahtakurusu (+1000 TL)</option>
-</select>
+    <<script>
+function hesapla() {
 
-<select id="alan">
-<option value="0">1+1</option>
-<option value="500">2+1</option>
-<option value="1000">3+1</option>
-<option value="1500">4+1</option>
-<option value="2500">Villa</option>
+    let hizmet = document.getElementById("hizmet").value;
+    let metrekare = parseInt(document.getElementById("metrekare").value);
+    let sonuc = document.getElementById("sonuc");
+
+    if (!metrekare || metrekare <= 0) {
+        sonuc.innerHTML = "Lütfen geçerli bir metrekare giriniz.";
+        return;
+    }
+
+    let fiyat = 0;
+
+    switch(hizmet){
+        case "Hamam Böceği":
+            fiyat = 1800;
+            break;
+        case "Fare":
+            fiyat = 2200;
+            break;
+        case "Tahta Kurusu":
+            fiyat = 4500;
+            break;
+        case "Karınca":
+            fiyat = 1700;
+            break;
+        case "Pire":
+            fiyat = 2000;
+            break;
+        case "Kene":
+            fiyat = 2200;
+            break;
+        case "Dezenfeksiyon":
+            fiyat = 1500;
+            break;
+    }
+
+    fiyat += metrekare * 8;
+
+    sonuc.innerHTML =
+    "<h2>Tahmini Fiyat: " + fiyat.toLocaleString("tr-TR") +
+    " TL</h2><br><b>Kesin fiyat için 0543 178 28 27 numaramızdan bize ulaşabilirsiniz.</b>";
+}
+</script>
 </select>
 <label>📍 İlçe</label>
 
