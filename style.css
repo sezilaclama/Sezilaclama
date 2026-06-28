@@ -266,3 +266,30 @@ transition:.3s;
 transform:scale(1.1);
 background:#084298;
 }
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+padding:60px 20px;
+background:#0c7b6d;
+text-align:center;
+}
+
+.stat-box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.stat-box h2{
+font-size:40px;
+color:#0c7b6d;
+margin:0;
+}
+
+.stat-box p{
+margin-top:10px;
+font-size:18px;
+font-weight:bold;
+}
