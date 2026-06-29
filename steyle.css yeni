@@ -1,0 +1,276 @@
+/* ===========================
+   SEZ İLAÇLAMA V2
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#08131f;
+    color:#fff;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(8,19,31,.75),rgba(8,19,31,.75)),
+    url("kahraman.jpg") center/cover;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+}
+
+.logo{
+    font-size:42px;
+    font-weight:800;
+    color:#14b8a6;
+    margin-bottom:20px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:70px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#14b8a6;
+}
+
+.hero{
+    text-align:center;
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.hero p{
+    font-size:22px;
+    color:#d6d6d6;
+    margin-bottom:40px;
+}
+
+.buton{
+    display:inline-block;
+    background:#14b8a6;
+    color:#fff;
+    padding:18px 40px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.buton:hover{
+    background:#0f766e;
+    transform:translateY(-4px);
+}
+
+/* GENEL */
+
+section{
+    width:min(1200px,90%);
+    margin:auto;
+    padding:90px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#14b8a6;
+    font-size:40px;
+    margin-bottom:50px;
+}/* HİZMET KARTLARI */
+
+.kartlar{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.kart{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    backdrop-filter:blur(12px);
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.kart:hover{
+    transform:translateY(-10px);
+    border-color:#14b8a6;
+}
+
+.kart h3{
+    margin-top:20px;
+    color:#14b8a6;
+    font-size:24px;
+}
+
+.kart{
+    font-size:55px;
+}
+
+/* HESAPLAMA */
+
+#hesapla{
+    background:#111c2b;
+    border-radius:20px;
+}
+
+#hesapla label{
+    display:block;
+    margin:18px 0 8px;
+    font-weight:600;
+}
+
+#hesapla select,
+#hesapla input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#1a2738;
+    color:white;
+    font-size:16px;
+}
+
+#hesapla button{
+    width:100%;
+    margin-top:25px;
+    padding:16px;
+    background:#14b8a6;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#hesapla button:hover{
+    background:#0f766e;
+}
+
+/* YORUMLAR */
+
+.yorum{
+    background:#111c2b;
+    border-left:5px solid #14b8a6;
+    padding:25px;
+    margin:20px auto;
+    border-radius:15px;
+    max-width:800px;
+}
+
+/* İSTATİSTİKLER */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat-box{
+    background:#111c2b;
+    padding:35px;
+    text-align:center;
+    border-radius:18px;
+}
+
+.stat-box h2{
+    color:#14b8a6;
+    font-size:42px;
+}
+
+.stat-box p{
+    margin-top:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#06101b;
+    text-align:center;
+    padding:60px 20px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+/* TELEFON BUTONU */
+
+.call-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#14b8a6;
+    color:white;
+    text-decoration:none;
+    padding:16px 22px;
+    border-radius:50px;
+    font-weight:bold;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.call-float:hover{
+    transform:scale(1.08);
+}
+
+/* MOBİL */
+
+@media(max-width:768px){
+
+.logo{
+    font-size:30px;
+}
+
+nav{
+    gap:15px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+section h2{
+    font-size:30px;
+}
+
+.buton{
+    width:100%;
+    max-width:320px;
+}
+}
