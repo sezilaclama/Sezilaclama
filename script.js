@@ -29,3 +29,45 @@ function hesapla() {
         <p>📞 Kesin fiyat için: <b>0543 178 28 27</b></p>
     `;
 }
+// Hamam böceği
+const bug = document.querySelector(".bug");
+if (bug) {
+  bug.addEventListener("click", () => {
+    bug.style.position = "fixed";
+
+    const move = setInterval(() => {
+      bug.style.left = Math.random() * (window.innerWidth - 100) + "px";
+      bug.style.top = Math.random() * (window.innerHeight - 100) + "px";
+    }, 300);
+
+    setTimeout(() => clearInterval(move), 5000);
+  });
+}
+
+// Sinek
+const fly = document.querySelector(".fly");
+if (fly) {
+  fly.addEventListener("click", () => {
+    fly.animate(
+      [
+        { transform: "translate(0,0)" },
+        { transform: "translate(200px,-150px)" },
+        { transform: "translate(-150px,-250px)" },
+        { transform: "translate(0,-350px)" }
+      ],
+      {
+        duration: 3000,
+        iterations: 1
+      }
+    );
+  });
+}
+
+// Fare
+const mouse = document.querySelector(".mouse");
+if (mouse) {
+  mouse.addEventListener("click", () => {
+    const ses = new Audio("sounds/mouse.mp3");
+    ses.play();
+  });
+}
