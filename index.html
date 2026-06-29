@@ -24,63 +24,127 @@
 <a href="#iletisim">İletişim</a>
 </nav>
 
-<div class="hero">
+<section class="hero">
 <h1>İstanbul'un Profesyonel İlaçlama Firması</h1>
-<p>Hamam Böceği • Fare • Pire • Karınca • Tahtakurusu</p>
-<a class="buton" href="https://wa.me/905431782827">WhatsApp'tan Teklif Al</a>
+
+<p>
+Hamam Böceği • Fare • Karınca • Pire • Tahtakurusu
+</p>
+
+<a class="buton" href="https://wa.me/905431782827">
+WhatsApp'tan Teklif Al
+</a>
+
+</section>
+
+</header><section id="hizmetler">
+
+<h2>Hizmetlerimiz</h2>
+
+<div class="kartlar">
+
+<div class="kart">
+🪳
+<h3>Hamam Böceği</h3>
+<p>Kalıcı ve garantili ilaçlama hizmeti.</p>
 </div>
-</header>
+
+<div class="kart">
+🐜
+<h3>Karınca</h3>
+<p>Ev ve iş yerleri için profesyonel uygulama.</p>
+</div>
+
+<div class="kart">
+🐀
+<h3>Fare</h3>
+<p>Kapalı ve açık alan fare kontrolü.</p>
+</div>
+
+<div class="kart">
+🦟
+<h3>Pire</h3>
+<p>Evcil hayvan ve yaşam alanı ilaçlaması.</p>
+</div>
+
+</div>
+
+</section>
 
 <section id="hesapla">
+
 <h2>💰 Tahmini Fiyat Hesaplama</h2>
 
+<div class="hesaplama">
+
 <label>Zararlı Türü</label>
+
 <select id="hizmet">
+
 <option>Hamam Böceği</option>
 <option>Fare</option>
-<option>Tahta Kurusu</option>
 <option>Karınca</option>
 <option>Pire</option>
-<option>Kene</option>
-<option>Dezenfeksiyon</option>
+<option>Tahta Kurusu</option>
+
 </select>
 
 <label>Metrekare</label>
-<input id="metrekare" type="number" placeholder="Örn: 120">
 
-<button onclick="hesapla()">Fiyat Hesapla</button>
+<input
+id="metrekare"
+type="number"
+placeholder="Örn: 120">
+
+<button onclick="hesapla()">
+Fiyat Hesapla
+</button>
 
 <div id="sonuc"></div>
+
+</div>
+
+</section><section id="yorumlar">
+
+<h2>Müşteri Yorumları</h2>
+
+<div class="yorum">
+⭐⭐⭐⭐⭐
+<p>"Çok hızlı geldiler. Hamam böceği sorunumuz tamamen çözüldü."</p>
+<b>- Ahmet K.</b>
+</div>
+
+<div class="yorum">
+⭐⭐⭐⭐⭐
+<p>"Gerçekten profesyonel ekip. Tavsiye ederim."</p>
+<b>- Ayşe Y.</b>
+</div>
+
 </section>
 
-<script>
-function hesapla(){
-let hizmet=document.getElementById("hizmet").value;
-let m2=parseInt(document.getElementById("metrekare").value);
+<section id="iletisim">
 
-if(isNaN(m2)||m2<=0){
-document.getElementById("sonuc").innerHTML="Lütfen metrekare giriniz.";
-return;
-}
+<h2>İletişim</h2>
 
-let fiyat=0;
+<p>📞 0543 178 28 27</p>
 
-switch(hizmet){
-case "Hamam Böceği": fiyat=2000; break;
-case "Fare": fiyat=2200; break;
-case "Tahta Kurusu": fiyat=4000; break;
-case "Karınca": fiyat=1700; break;
-case "Pire": fiyat=3000; break;
-case "Kene": fiyat=4000; break;
-case "Dezenfeksiyon": fiyat=2000; break;
-}
+<p>📍 İstanbul</p>
 
-fiyat += m2*8;
+<a class="buton" href="https://wa.me/905431782827">
+WhatsApp'tan Yaz
+</a>
 
-document.getElementById("sonuc").innerHTML =
-"💰 Tahmini Fiyat: <br><b>"+fiyat.toLocaleString("tr-TR")+" TL</b><br>Kesin fiyat için 📞 0543 178 28 27";
-}
-</script>
+</section>
+
+<footer>
+
+<h3>SEZ İLAÇLAMA</h3>
+
+<p>© 2025 Tüm Hakları Saklıdır.</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
