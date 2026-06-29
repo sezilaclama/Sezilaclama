@@ -1,46 +1,61 @@
-document.addEventListener("DOMContentLoaded", function () {
+function hesapla(){
 
-    const items = document.querySelectorAll(".kart, .yorum, .stat-box, .hero");
+let hizmet=document.getElementById("hizmet").value;
+let m2=parseInt(document.getElementById("metrekare").value);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
+if(isNaN(m2)||m2<=0){
+document.getElementById("sonuc").innerHTML="Lütfen metrekare giriniz.";
+return;
+}
 
-    items.forEach(item => {
-        item.style.opacity = "0";
-        item.style.transform = "translateY(40px)";
-        item.style.transition = "all .8s ease";
-        observer.observe(item);
-    });
+let fiyat=0;
+
+switch(hizmet){
+
+case "Hamam Böceği":
+fiyat=2000;
+break;
+
+case "Fare":
+fiyat=2200;
+break;
+
+case "Karınca":
+fiyat=1700;
+break;
+
+case "Pire":
+fiyat=3000;
+break;
+
+case "Tahta Kurusu":
+fiyat=4000;
+break;
+
+default:
+fiyat=2000;
+
+}
+
+fiyat+=m2*8;
+
+document.getElementById("sonuc").innerHTML=
+"💰 Tahmini Fiyat: <br><b>"+fiyat.toLocaleString("tr-TR")+" TL</b><br><br>📞 Kesin fiyat için 0543 178 28 27";
+
+}
+
+document.querySelectorAll(".kart").forEach(kart=>{
+
+kart.style.cursor="pointer";
+
+kart.addEventListener("click",()=>{
+
+kart.classList.remove("bug-anim");
+
+void kart.offsetWidth;
+
+kart.classList.add("bug-anim");
 
 });
 
-
-
-document.addEventListener("DOMContentLoaded",()=>{
- const audio=new (window.AudioContext||window.webkitAudioContext)();
- function beep(){
-   const o=audio.createOscillator(),g=audio.createGain();
-   o.type="square";o.frequency.value=700;
-   o.connect(g);g.connect(audio.destination);
-   g.gain.value=0.03;o.start();
-   g.gain.exponentialRampToValueAtTime(0.0001,audio.currentTime+0.12);
-   o.stop(audio.currentTime+0.12);
- }
- document.querySelectorAll("img").forEach(img=>{
-   img.style.cursor="pointer";
-   img.addEventListener("click",()=>{
-      beep();
-      img.classList.remove("bug-anim");
-      void img.offsetWidth;
-      img.classList.add("bug-anim");
-   });
- });
 });
