@@ -1,174 +1,75 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SEZ İlaçlama | İstanbul Profesyonel İlaçlama</title>
-
-<meta name="description" content="İstanbul'da hamam böceği, fare, pire, karınca ve tahtakurusu ilaçlama hizmeti.">
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEZ İlaçlama | İstanbul Profesyonel İlaçlama</title>
+    <meta name="description" content="İstanbul'da ilaçlama hizmeti. Hamam böceği, fare, pire, karınca.">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<div class="logo">🛡️ SEZ İLAÇLAMA</div>
+    <header>
+        <div class="logo">🛡️ SEZ İLAÇLAMA</div>
+        <nav>
+            <a href="#">Anasayfa</a>
+            <a href="#hizmetler">Hizmetler</a>
+            <a href="#hesapla">Fiyat Hesapla</a>
+            <a href="#yorumlar">Yorumlar</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
 
-<nav>
-<a href="#">Anasayfa</a>
-<a href="#hizmetler">Hizmetler</a>
-<a href="#hesapla">Fiyat Hesapla</a>
-<a href="#yorumlar">Yorumlar</a>
-<a href="#iletisim">İletişim</a>
-</nav>
+        <section class="hero">
+            <h1>İstanbul'un Profesyonel İlaçlama Firması</h1>
+            <<section id="hesapla">
+    <h2>💰 Tahmini Fiyat Hesaplama</h2>
+    <div class="hesaplama">
+        <label>📍 İlçe Seçiniz</label>
+        <select id="ilce">
+            <option>Adalar</option>
+            <option>Arnavutköy</option>
+            <option>Ataşehir</option>
+            <option>Avcılar</option>
+            <option>Bağcılar</option>
+            <option>Bahçelievler</option>
+            <option>Bakırköy</option>
+            <option>Başakşehir</option>
+            <option>Bayrampaşa</option>
+            <option>Beşiktaş</option>
+            <option>Beykoz</option>
+            <option>Beylikdüzü</option>
+            <option>Beyoğlu</option>
+            <option>Büyükçekmece</option>
+            <option>Çatalca</option>
+            <option>Çekmeköy</option>
+            <option>Esenler</option>
+            <option>Esenyurt</option>
+            <option>Eyüpsultan</option>
+            <option>Fatih</option>
+            <option>Gaziosmanpaşa</option>
+            <option>Güngören</option>
+            <option>Kadıköy</option>
+            <option>Kağıthane</option>
+            <option>Kartal</option>
+            <option>Küçükçekmece</option>
+            <option>Maltepe</option>
+            <option>Pendik</option>
+            <option>Sancaktepe</option>
+            <option>Sarıyer</option>
+            <option>Silivri</option>
+            <option>Sultanbeyli</option>
+            <option>Sultangazi</option>
+            <option>Şile</option>
+            <option>Şişli</option>
+            <option>Tuzla</option>
+            <option>Ümraniye</option>
+            <option>Üsküdar</option>
+            <option>Zeytinburnu</option>
+        </select>
 
-<section class="hero">
-<h1>İstanbul'un Profesyonel İlaçlama Firması</h1>
-
-<p>
-Hamam Böceği • Fare • Karınca • Pire • Tahtakurusu
-</p>
-
-<a class="buton" href="https://wa.me/905431782827">
-WhatsApp'tan Teklif Al
-</a>
-
-</section>
-
-</header><section id="hizmetler">
-
-<h2>Hizmetlerimiz</h2>
-
-<div class="kartlar">
-
-<div class="kart">
-🪳
-<h3>Hamam Böceği</h3>
-<p>Kalıcı ve garantili ilaçlama hizmeti.</p>
-</div>
-
-<div class="kart">
-🐜
-<h3>Karınca</h3>
-<p>Ev ve iş yerleri için profesyonel uygulama.</p>
-</div>
-
-<div class="kart">
-🐀
-<h3>Fare</h3>
-<p>Kapalı ve açık alan fare kontrolü.</p>
-</div>
-
-<div class="kart">
-🦟
-<h3>Pire</h3>
-<p>Evcil hayvan ve yaşam alanı ilaçlaması.</p>
-</div>
-
-</div>
-
-</section>
-<label>İlçe</label>
-
-<select id="ilce">
-<option value="Adalar">Adalar</option>
-<option value="Arnavutköy">Arnavutköy</option>
-<option value="Ataşehir">Ataşehir</option>
-<option value="Avcılar">Avcılar</option>
-<option value="Bağcılar">Bağcılar</option>
-<option value="Bahçelievler">Bahçelievler</option>
-<option value="Bakırköy">Bakırköy</option>
-<option value="Başakşehir">Başakşehir</option>
-<option value="Bayrampaşa">Bayrampaşa</option>
-<option value="Beşiktaş">Beşiktaş</option>
-<option value="Beykoz">Beykoz</option>
-<option value="Beylikdüzü">Beylikdüzü</option>
-<option value="Beyoğlu">Beyoğlu</option>
-<option value="Büyükçekmece">Büyükçekmece</option>
-<option value="Çatalca">Çatalca</option>
-<option value="Çekmeköy">Çekmeköy</option>
-<option value="Esenler">Esenler</option>
-<option value="Esenyurt">Esenyurt</option>
-<option value="Eyüpsultan">Eyüpsultan</option>
-<option value="Fatih">Fatih</option>
-<option value="Gaziosmanpaşa">Gaziosmanpaşa</option>
-<option value="Güngören">Güngören</option>
-<option value="Kadıköy">Kadıköy</option>
-<option value="Kağıthane">Kağıthane</option>
-<option value="Kartal">Kartal</option>
-<option value="Küçükçekmece">Küçükçekmece</option>
-<option value="Maltepe">Maltepe</option>
-<option value="Pendik">Pendik</option>
-<option value="Sancaktepe">Sancaktepe</option>
-<option value="Sarıyer">Sarıyer</option>
-<option value="Silivri">Silivri</option>
-<option value="Sultanbeyli">Sultanbeyli</option>
-<option value="Sultangazi">Sultangazi</option>
-<option value="Şile">Şile</option>
-<option value="Şişli">Şişli</option>
-<option value="Tuzla">Tuzla</option>
-<option value="Ümraniye">Ümraniye</option>
-<option value="Üsküdar">Üsküdar</option>
-<option value="Zeytinburnu">Zeytinburnu</option>
-</select>
-
-<label>Metrekare</label>
-
-<input
-id="metrekare"
-type="number"
-placeholder="Örneğin: 120">
-
-
-<button onclick="hesapla()">
-Fiyat Hesapla
-
-
-</div>
-
-</section><section id="yorumlar">
-
-<h2>Müşteri Yorumları</h2>
-
-<div class="yorum">
-⭐⭐⭐⭐⭐
-<p>"Çok hızlı geldiler. Hamam böceği sorunumuz tamamen çözüldü."</p>
-<b>- Ahmet K.</b>
-</div>
-
-<div class="yorum">
-⭐⭐⭐⭐⭐
-<p>"Gerçekten profesyonel ekip. Tavsiye ederim."</p>
-<b>- Ayşe Y.</b>
-</div>
-
-</section>
-
-<section id="iletisim">
-
-<h2>İletişim</h2>
-
-<p>📞 0543 178 28 27</p>
-
-<p>📍 İstanbul</p>
-
-<a class="buton" href="https://wa.me/905431782827">
-WhatsApp'tan Yaz
-</a>
-
-</section>
-
-<footer>
-
-<h3>SEZ İLAÇLAMA</h3>
-
-<p>© 2025 Tüm Hakları Saklıdır.</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+        <label>📐 Metrekare</label>
+        <input id="metrekare" type="number" placeholder="Örn: 120">
+        <button onclick="hesapla()">💰 Fiyat Hesapla</button>
+        <div id="sonuc"></div>
+    </div>
+            </section>
