@@ -1,7 +1,6 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 
-    const items = document.querySelectorAll(".card, .gallery img, .hero");
+    const items = document.querySelectorAll(".kart, .yorum, .stat-box, .hero");
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -20,5 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         item.style.transition = "all .8s ease";
         observer.observe(item);
     });
+
+});
 
 });
