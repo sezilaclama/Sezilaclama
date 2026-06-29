@@ -95,20 +95,21 @@ nav a:hover{
 
 .buton{
     display:inline-block;
-    background:#25D366;
-    color:white;
+    background:#14b8a6;
+    color:#fff;
     text-decoration:none;
-    padding:16px 35px;
-    border-radius:40px;
+    padding:18px 42px;
+    border-radius:50px;
     font-size:18px;
-    font-weight:bold;
+    font-weight:700;
+    box-shadow:0 15px 35px rgba(20,184,166,.35);
     transition:.3s;
 }
 
 .buton:hover{
-    transform:scale(1.05);
+    transform:translateY(-3px);
+    background:#0f766e;
 }
-
 /* GENEL */
 
 section{
