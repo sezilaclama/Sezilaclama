@@ -19,10 +19,17 @@ body{
 /* HEADER */
 
 header{
-    background:linear-gradient(135deg,#0f766e,#14b8a6);
+    background:
+        linear-gradient(rgba(7,20,32,.70), rgba(7,20,32,.70)),
+        url("kahraman.jpg") center/cover no-repeat;
     color:white;
     text-align:center;
-    padding:70px 20px;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
 }
 
 .logo{
