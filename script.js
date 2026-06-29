@@ -1,19 +1,11 @@
-function hesapla(){
 
-let hizmet=document.getElementById("hizmet").value;
-let m2=parseInt(document.getElementById("metrekare").value);
-
-if(isNaN(m2)||m2<=0){
-document.getElementById("sonuc").innerHTML="Lütfen metrekare giriniz.";
-return;
-}
-
-let fiyat=0;
-
+fiyat=2000;function hesapla() {
+let hizmet = document.getElementById("hizmet").value;
+...
 switch(hizmet){
-
 case "Hamam Böceği":
-fiyat=2000;
+...
+}
 break;
 
 case "Fare":
