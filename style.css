@@ -77,20 +77,21 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:64px;
-    font-weight:800;
-    line-height:1.1;
-    margin:20px 0;
-    text-shadow:0 8px 30px rgba(0,0,0,.45);
-}
+    font-size:38px;
+    line-height:1.2;
 }
 
 .hero p{
-    font-size:24px;
-    max-width:700px;
-    margin:0 auto 35px;
-    color:#e2e8f0;
+    font-size:18px;
+    padding:0 15px;
 }
+
+nav{
+    flex-wrap:wrap;
+    gap:15px;
+    padding:12px 20px;
+}
+
 }
 
 .buton{
