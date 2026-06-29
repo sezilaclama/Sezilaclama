@@ -1,63 +1,31 @@
 function hesapla() {
+    const ilce = document.getElementById("ilce").value;
+    const m2 = parseInt(document.getElementById("metrekare").value);
 
-    let hizmet = document.getElementById("hizmet").value;
-    let ilce = document.getElementById("ilce").value;
-    let m2 = parseInt(document.getElementById("metrekare").value);
-
-    if (isNaN(m2) || m2 <= 0) {
-        document.getElementById("sonuc").innerHTML =
-            "Lütfen geçerli bir metrekare giriniz.";
+    if (!m2 || m2 <= 0) {
+        document.getElementById("sonuc").innerHTML = "⚠️ Lütfen geçerli bir metrekare giriniz.";
         return;
     }
 
     let fiyat = 0;
 
-    switch (hizmet) {
-        case "Hamam Böceği":
-            fiyat = 2000;
-            break;
-        case "Fare":
-            fiyat = 2200;
-            break;
-        case "Karınca":
-            fiyat = 1700;
-            break;
-        case "Pire":
-            fiyat = 3000;
-            break;
-        case "Tahta Kurusu":
-            fiyat = 4000;
-            break;
+    // İlçe bazlı ek ücret
+    if (["Silivri", "Şile", "Çatalca", "Arnavutköy"].includes(ilce)) {
+        fiyat += 500;
     }
 
-    if (
-        ilce === "Beylikdüzü" ||
-        ilce === "Esenyurt" ||
-        ilce === "Avcılar"
-    ) {
-        fiyat += 300;
-    }
+    // Metrekare bazlı ücret
+    if (m2 <= 50) fiyat += 1800;
+    else if (m2 <= 100) fiyat += 2200;
+    else if (m2 <= 150) fiyat += 2800;
+    else if (m2 <= 200) fiyat += 3400;
+    else if (m2 <= 300) fiyat += 4200;
+    else fiyat += 5000;
 
-    fiyat += m2 * 8;
-
-    document.getElementById("sonuc").innerHTML =
-        "💰 Tahmini Fiyat: <br><b>" +
-        fiyat.toLocaleString("tr-TR") +
-        " TL</b><br><br>📞 Kesin fiyat için <b>0543 178 28 27</b>";
+    document.getElementById("sonuc").innerHTML = `
+        <h3>💰 Tahmini Fiyat: ${fiyat.toLocaleString("tr-TR")} TL</h3>
+        <p>📍 İlçe: <b>${ilce}</b></p>
+        <p>📐 Metrekare: <b>${m2} m²</b></p>
+        <p>📞 Kesin fiyat için: <b>0543 178 28 27</b></p>
+    `;
 }
-
-document.querySelectorAll(".kart").forEach((kart) => {
-
-    kart.style.cursor = "pointer";
-
-    kart.addEventListener("click", () => {
-
-        kart.classList.remove("bug-anim");
-
-        void kart.offsetWidth;
-
-        kart.classList.add("bug-anim");
-
-    });
-
-});
