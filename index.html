@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<body>
 
+<header>
+<div class="logo">🛡️ SEZ İLAÇLAMA</div>
+
+<nav>
+<a href="#">Anasayfa</a>
+<a href="#hizmetler">Hizmetler</a>
+<a href="#hesapla">Fiyat Hesapla</a>
+<a href="#yorumlar">Yorumlar</a>
+<a href="#iletisim">İletişim</a>
+</nav>
+
+<div class="hero">
+<h1>İstanbul'un Profesyonel İlaçlama Firması</h1>
+<p>Hamam Böceği • Fare • Pire • Karınca • Tahtakurusu</p>
+<a class="buton" href="https://wa.me/905431782827">WhatsApp'tan Teklif Al</a>
+</div>
+</header>
+
+<section id="hesapla">
+<h2>💰 Tahmini Fiyat Hesaplama</h2>
+
+<label>Zararlı Türü</label>
+<select id="hizmet">
+<option>Hamam Böceği</option>
+<option>Fare</option>
+<option>Tahta Kurusu</option>
+<option>Karınca</option>
+<option>Pire</option>
+<option>Kene</option>
+<option>Dezenfeksiyon</option>
+</select>
+
+<label>Metrekare</label>
+<input id="metrekare" type="number" placeholder="Örn: 120">
+
+<button onclick="hesapla()">Fiyat Hesapla</button>
+
+<div id="sonuc"></div>
+</section>
+
+<script>
+function hesapla(){
+let hizmet=document.getElementById("hizmet").value;
+let m2=parseInt(document.getElementById("metrekare").value);
+
+if(isNaN(m2)||m2<=0){
+document.getElementById("sonuc").innerHTML="Lütfen metrekare giriniz.";
+return;
+}
+
+let fiyat=0;
+
+switch(hizmet){
+case "Hamam Böceği": fiyat=2000; break;
+case "Fare": fiyat=2200; break;
+case "Tahta Kurusu": fiyat=4000; break;
+case "Karınca": fiyat=1700; break;
+case "Pire": fiyat=3000; break;
+case "Kene": fiyat=4000; break;
+case "Dezenfeksiyon": fiyat=2000; break;
+}
+
+fiyat += m2*8;
+
+document.getElementById("sonuc").innerHTML =
+"💰 Tahmini Fiyat: <br><b>"+fiyat.toLocaleString("tr-TR")+" TL</b><br>Kesin fiyat için 📞 0543 178 28 27";
+}
+</script>
+
+</body>
+</html>
