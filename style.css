@@ -179,3 +179,22 @@ margin:10px 0;
 }
 
 }
+.hayvanlar{
+display:flex;
+justify-content:center;
+gap:30px;
+margin:40px 0;
+flex-wrap:wrap;
+}
+
+.hayvan{
+width:90px;
+height:90px;
+cursor:pointer;
+transition:transform .3s;
+position:relative;
+}
+
+.hayvan:hover{
+transform:scale(1.2);
+}
