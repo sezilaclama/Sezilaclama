@@ -2,7 +2,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 html{
@@ -10,51 +10,58 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#101010;
+background:#111;
 color:#fff;
 overflow-x:hidden;
+line-height:1.6;
 }
 
 .hero{
-    min-height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("file_00000000df6c71f48595452bbffce1d6.png")
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("background.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
-nav{
+.navbar{
 position:fixed;
 top:0;
 left:0;
 width:100%;
-background:rgba(0,0,0,.6);
-backdrop-filter:blur(10px);
+padding:18px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 40px;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(12px);
 z-index:999;
 }
 
 .logo{
-font-size:28px;
-font-weight:bold;
+font-size:30px;
+font-weight:700;
 color:#00ff88;
 }
 
+.menu{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
 .menu a{
-color:white;
 text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+color:white;
+font-weight:600;
 transition:.3s;
 }
 
@@ -63,7 +70,7 @@ color:#00ff88;
 }
 
 .hero-content h1{
-font-size:55px;
+font-size:56px;
 margin-bottom:20px;
 }
 
@@ -72,151 +79,136 @@ font-size:22px;
 margin-bottom:30px;
 }
 
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
 .btn{
 background:#00c853;
 color:white;
-padding:16px 35px;
+padding:15px 35px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
-font-size:18px;
 transition:.3s;
 }
 
-.btn:hover{
-background:#00e676;
-transform:scale(1.05);
-}section{
-max-width:1200px;
-margin:auto;
+.btnsection{
 padding:80px 20px;
+}
+
+h2{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#00ff88;
 }
 
 .cam-kutu{
 max-width:700px;
 margin:auto;
-padding:35px;
 background:rgba(255,255,255,.08);
 backdrop-filter:blur(15px);
 border:1px solid rgba(255,255,255,.15);
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
-}
-
-.cam-kutu h2{
-text-align:center;
-margin-bottom:20px;
-font-size:34px;
-color:#00ff88;
+padding:35px;
+box-shadow:0 10px 30px rgba(0,0,0,.5);
 }
 
 .cam-kutu p{
 text-align:center;
-margin-bottom:25px;
+margin-bottom:20px;
 color:#ddd;
 }
 
 select,
 input{
 width:100%;
-padding:16px;
-margin-top:15px;
+padding:15px;
+margin:12px 0;
 border:none;
-border-radius:12px;
-font-size:17px;
+border-radius:10px;
+font-size:16px;
 background:#222;
 color:#fff;
 }
 
 button{
 width:100%;
-padding:18px;
-margin-top:20px;
+padding:16px;
+border:none;
+border-radius:10px;
 background:#00c853;
 color:#fff;
-border:none;
-border-radius:12px;
-font-size:20px;
-font-weight:bold;
+font-size:18px;
+font-weight:600;
 cursor:pointer;
 transition:.3s;
 }
 
 button:hover{
 background:#00e676;
-transform:scale(1.03);
 }
 
 #sonuc{
-margin-top:25px;
-padding:20px;
-background:rgba(0,255,136,.15);
-border-radius:12px;
+margin-top:20px;
+padding:18px;
 text-align:center;
 font-size:22px;
 font-weight:bold;
-}/* Hizmet Kartları */
-
-.kartlar{
+background:rgba(0,255,136,.12);
+border-radius:12px;
+}.kartlar{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-margin-top:50px;
+gap:25px;
+margin-top:40px;
 }
 
 .kart{
 background:rgba(255,255,255,.08);
-backdrop-filter:blur(15px);
-padding:25px;
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.12);
 border-radius:20px;
+padding:25px;
 text-align:center;
-transition:.4s;
-border:1px solid rgba(255,255,255,.1);
+transition:.3s;
 }
 
 .kart:hover{
-transform:translateY(-10px) scale(1.03);
-box-shadow:0 0 30px rgba(0,255,136,.4);
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,255,136,.35);
 }
 
 .kart img{
 width:120px;
+height:auto;
 margin-bottom:15px;
-transition:.3s;
 }
 
-.kart img:hover{
-transform:scale(1.15);
+.yorumlar{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
 
-/* Hareketli Zararlılar */
-
-.hayvan{
-position:fixed;
-width:90px;
-cursor:pointer;
-z-index:9999;
-user-select:none;
-transition:transform .2s;
-filter:drop-shadow(0 0 10px rgba(0,0,0,.5));
+.yorum{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.12);
 }
 
-#bocek{
-left:20px;
-top:150px;
+footer{
+padding:30px;
+text-align:center;
+background:#0b0b0b;
+margin-top:50px;
+color:#aaa;
 }
-
-#fare{
-left:150px;
-top:420px;
-}
-
-#sinek{
-left:280px;
-top:250px;
-}
-
-/* Mobil */
 
 @media(max-width:768px){
 
@@ -228,12 +220,30 @@ font-size:34px;
 font-size:18px;
 }
 
-.menu{
-display:none;
+.navbar{
+padding:15px;
+flex-direction:column;
+gap:10px;
 }
 
-.hayvan{
-width:65px;
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.logo{
+font-size:22px;
+}
+
+.btn{
+width:100%;
+max-width:280px;
+text-align:center;
+}
+
+h2{
+font-size:30px;
 }
 
 }
