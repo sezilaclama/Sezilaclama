@@ -101,3 +101,56 @@ document.querySelectorAll(".hayvan").forEach(h => {
         this.classList.add("kac");
     });
 });
+// Hamam böceği
+const bocek = document.getElementById("bocek");
+
+let bx = 20;
+let by = 120;
+let dx = 2;
+let dy = 1.5;
+
+setInterval(() => {
+    if (bocek) {
+        bx += dx;
+        by += dy;
+
+        if (bx > window.innerWidth - 80 || bx < 0) dx *= -1;
+        if (by > window.innerHeight - 80 || by < 0) dy *= -1;
+
+        bocek.style.left = bx + "px";
+        bocek.style.top = by + "px";
+    }
+},20);
+
+// Fare
+const fare = document.getElementById("fare");
+
+let fx = -100;
+
+setInterval(() => {
+    if (fare) {
+        fx += 5;
+
+        if (fx > window.innerWidth + 100)
+            fx = -100;
+
+        fare.style.left = fx + "px";
+    }
+},20);
+
+// Sinek
+const sinek = document.getElementById("sinek");
+
+let angle = 0;
+
+setInterval(() => {
+    if (sinek) {
+        angle += 0.15;
+
+        sinek.style.left =
+            150 + Math.sin(angle*2)*120 + "px";
+
+        sinek.style.top =
+            150 + Math.cos(angle*3)*70 + "px";
+    }
+},20);
