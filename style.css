@@ -247,3 +247,26 @@ font-size:30px;
 }
 
 }
+@media (max-width:768px){
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+margin-top:10px;
+}
+
+.menu li{
+list-style:none;
+}
+
+.navbar{
+padding:10px;
+}
+
+.logo{
+font-size:24px;
+}
+
+}
