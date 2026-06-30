@@ -208,3 +208,26 @@ transform:scale(1.2);
 .kac {
     animation: kos 3s ease-in-out;
 }
+.hayvan{
+    position:fixed;
+    width:70px;
+    cursor:pointer;
+    z-index:9999;
+    user-select:none;
+    transition:transform .2s;
+}
+
+#bocek{
+    left:20px;
+    top:120px;
+}
+
+#fare{
+    left:120px;
+    top:350px;
+}
+
+#sinek{
+    left:220px;
+    top:220px;
+}
