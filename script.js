@@ -94,3 +94,10 @@ if (mouse) {
 
   });
 }
+document.querySelectorAll(".hayvan").forEach(h => {
+    h.addEventListener("click", function () {
+        this.classList.remove("kac");
+        void this.offsetWidth;
+        this.classList.add("kac");
+    });
+});
