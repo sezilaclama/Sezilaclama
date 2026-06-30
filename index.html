@@ -12,68 +12,10 @@
 
 <link rel="stylesheet" href="style.css">
 
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<body>
-
-<header class="hero">
-
-<nav>
-
-<div class="logo">
-🛡️ SEZ İLAÇLAMA
-</div>
-
-<div class="menu">
-
-<a href="#anasayfa">Anasayfa</a>
-
-<a href="#hizmetler">Hizmetler</a>
-
-<a href="#hesapla">Fiyat Hesapla</a>
-
-<a href="#yorumlar">Yorumlar</a>
-
-<a href="#iletisim">İletişim</a>
-
-</div>
-
-</nav>
-
-<div class="hero-content">
-
-<h1>
-İstanbul'un Profesyonel İlaçlama Firması
-</h1>
-
-<p>
-
-Hamam Böceği • Fare • Karınca • Tahtakurusu • Pire
-
-</p>
-
-<a href="https://wa.me/905431782827" class="btn">
-
-WhatsApp'tan Teklif Al
-
-</a>
-
-</div>
-
-</header>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SEZ İlaçlama | İstanbul Profesyonel İlaçlama</title>
-
-<meta name="description" content="İstanbul'un Profesyonel İlaçlama Firması">
-
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -81,50 +23,122 @@ WhatsApp'tan Teklif Al
 
 <header class="hero">
 
-<nav>
+<nav class="navbar">
 
 <div class="logo">
-🛡️ SEZ İLAÇLAMA
-</div>
 
-<div class="menu">
-
-<a href="#anasayfa">Anasayfa</a>
-
-<a href="#hizmetler">Hizmetler</a>
-
-<a href="#hesapla">Fiyat Hesapla</a>
-
-<a href="#yorumlar">Yorumlar</a>
-
-<a href="#iletisim">İletişim</a>
+🛡️ <span>SEZ İLAÇLAMA</span>
 
 </div>
+
+<ul class="menu">
+
+<li><a href="#anasayfa">Anasayfa</a></li>
+
+<li><a href="#hizmetler">Hizmetler</a></li>
+
+<li><a href="#hesapla">Fiyat Hesapla</a></li>
+
+<li><a href="#yorumlar">Yorumlar</a></li>
+
+<li><a href="#iletisim">İletişim</a></li>
+
+</ul>
 
 </nav>
 
 <div class="hero-content">
 
-<h1>
-İstanbul'un Profesyonel İlaçlama Firması
-</h1>
+<h1>İstanbul'un Profesyonel İlaçlama Firması</h1>
 
 <p>
 
-Hamam Böceği • Fare • Karınca • Tahtakurusu • Pire
+Hamam Böceği • Fare • Pire • Karınca • Tahtakurusu
 
 </p>
 
-<a href="https://wa.me/905431782827" class="btn">
+<div class="hero-buttons">
 
-WhatsApp'tan Teklif Al
+<a href="tel:+905431782827" class="btn">
+📞 Hemen Ara
+</a>
 
+<a href="https://wa.me/905431782827" class="btn whatsapp">
+💬 WhatsApp
 </a>
 
 </div>
 
-</header>
-<section id="hizmetler">
+</div>
+
+</header><section id="hesapla" class="hesapla">
+
+<div class="cam-kutu">
+
+<h2>💰 Anında Fiyat Hesapla</h2>
+
+<p>İlçenizi ve metrekareyi seçin.</p>
+
+<select id="ilce">
+
+<option value="">İlçe Seçiniz</option>
+
+<option>Adalar</option>
+<option>Arnavutköy</option>
+<option>Ataşehir</option>
+<option>Avcılar</option>
+<option>Bağcılar</option>
+<option>Bahçelievler</option>
+<option>Bakırköy</option>
+<option>Başakşehir</option>
+<option>Bayrampaşa</option>
+<option>Beşiktaş</option>
+<option>Beykoz</option>
+<option>Beylikdüzü</option>
+<option>Beyoğlu</option>
+<option>Büyükçekmece</option>
+<option>Çatalca</option>
+<option>Çekmeköy</option>
+<option>Esenler</option>
+<option>Esenyurt</option>
+<option>Eyüpsultan</option>
+<option>Fatih</option>
+<option>Gaziosmanpaşa</option>
+<option>Güngören</option>
+<option>Kadıköy</option>
+<option>Kağıthane</option>
+<option>Kartal</option>
+<option>Küçükçekmece</option>
+<option>Maltepe</option>
+<option>Pendik</option>
+<option>Sancaktepe</option>
+<option>Sarıyer</option>
+<option>Silivri</option>
+<option>Sultanbeyli</option>
+<option>Sultangazi</option>
+<option>Şile</option>
+<option>Şişli</option>
+<option>Tuzla</option>
+<option>Ümraniye</option>
+<option>Üsküdar</option>
+<option>Zeytinburnu</option>
+
+</select>
+
+<input
+type="number"
+id="metrekare"
+placeholder="Metrekare">
+
+<button id="hesaplaBtn">
+💰 Fiyat Hesapla
+</button>
+
+<div id="sonuc"></div>
+
+</div>
+
+</section><section id="hizmetler">
 
 <h2>🛡️ Hizmetlerimiz</h2>
 
@@ -139,49 +153,54 @@ WhatsApp'tan Teklif Al
 <div class="kart">
 <img src="fare.png" alt="Fare">
 <h3>Fare İlaçlama</h3>
-<p>Ev ve iş yerleri için etkili çözüm.</p>
+<p>Ev ve iş yerleri için etkili çözümler.</p>
 </div>
 
 <div class="kart">
 <img src="sinek.png" alt="Sinek">
-<h3>Sinek İlaçlama</h3>
+<h3>Sinek ve Uçan Haşere İlaçlama</h3>
 <p>Kalıcı ve güvenli uygulama.</p>
 </div>
 
+<div class="kart">
+<h3>🏠 Ev İlaçlama</h3>
+<p>Kokusuz ve güvenli ilaçlama hizmeti.</p>
 </div>
 
-</section>
-<footer>
+<div class="kart">
+<h3>🏢 İş Yeri İlaçlama</h3>
+<p>İşletmeler için profesyonel çözümler.</p>
+</div>
 
-<p>© 2026 SEZ İlaçlama | Tüm Hakları Saklıdır.</p>
+<div class="kart">
+<h3>🛏️ Tahtakurusu İlaçlama</h3>
+<p>Garantili tahtakurusu uygulaması.</p>
+</div>
 
-</footer>
+</div>
 
-<script src="script.js"></script>
+</section><section id="yorumlar">
 
-</body>
-</html><section id="yorumlar">
-
-<h2>⭐ Müşteri Yorumları</h2>
+<h2>⭐ Müşterilerimiz Ne Diyor?</h2>
 
 <div class="yorumlar">
 
 <div class="yorum">
 ⭐⭐⭐⭐⭐
-<p>"Çok hızlı geldiler. Aynı gün tüm sorunumuz çözüldü."</p>
-<b>- Ahmet K.</b>
+<p>"Aynı gün geldiler, hamam böceği sorunumuz tamamen çözüldü."</p>
+<b>— Ahmet K.</b>
 </div>
 
 <div class="yorum">
 ⭐⭐⭐⭐⭐
-<p>"İşlerini profesyonel yapıyorlar. Kesinlikle tavsiye ederim."</p>
-<b>- Ayşe Y.</b>
+<p>"Çok profesyonel ekip. Gönül rahatlığıyla tavsiye ederim."</p>
+<b>— Ayşe Y.</b>
 </div>
 
 <div class="yorum">
 ⭐⭐⭐⭐⭐
-<p>"Fiyatları uygun, ekip çok ilgiliydi."</p>
-<b>- Mehmet D.</b>
+<p>"Fiyat uygun, hizmet mükemmeldi. Teşekkürler SEZ İlaçlama."</p>
+<b>— Mehmet D.</b>
 </div>
 
 </div>
@@ -192,15 +211,21 @@ WhatsApp'tan Teklif Al
 
 <h2>📞 İletişim</h2>
 
-<p><strong>Telefon:</strong> 0543 178 28 27</p>
+<p>📱 <strong>Telefon:</strong> 0543 178 28 27</p>
 
-<p><strong>WhatsApp:</strong> 0543 178 28 27</p>
+<p>📍 <strong>Hizmet:</strong> İstanbul Geneli</p>
 
-<p><strong>Hizmet Bölgesi:</strong> İstanbul Geneli</p>
+<div class="hero-buttons">
 
-<a href="https://wa.me/905431782827" class="btn">
-WhatsApp'tan Yaz
+<a href="tel:+905431782827" class="btn">
+📞 Hemen Ara
 </a>
+
+<a href="https://wa.me/905431782827" class="btn whatsapp">
+💬 WhatsApp
+</a>
+
+</div>
 
 </section>
 
