@@ -154,3 +154,26 @@ setInterval(() => {
             150 + Math.cos(angle*3)*70 + "px";
     }
 },20);
+// Dokununca kaçma efekti
+function kac(eleman){
+    const x = Math.random() * (window.innerWidth - 80);
+    const y = Math.random() * (window.innerHeight - 80);
+
+    eleman.style.left = x + "px";
+    eleman.style.top = y + "px";
+
+    // Destekleyen telefonlarda titreşim
+    if (navigator.vibrate) navigator.vibrate(80);
+}
+
+document.getElementById("bocek").onclick = function(){
+    kac(this);
+};
+
+document.getElementById("fare").onclick = function(){
+    kac(this);
+};
+
+document.getElementById("sinek").onclick = function(){
+    kac(this);
+};
