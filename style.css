@@ -11,39 +11,32 @@
 
 html{
     scroll-behavior:smooth;
-}
-
 body{
-    background:#111;
+    margin:0;
+    padding:0;
     color:#fff;
     overflow-x:hidden;
     line-height:1.6;
-}
-
-/* HERO */
-
-.hero{
-
-    min-height:100vh;
 
     background:
-    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-    url("home.jpg")
+    linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.20)),
+    url("home.jpg");
 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-
+    background-attachment:fixed;
+}
+/* HERO */
+.hero{
+    min-height:100vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
     padding:20px;
-
 }
+
 
 .navbar{
 
