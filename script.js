@@ -1,135 +1,33 @@
-/* =========================
-   YORUMLAR
-========================= */
-.yorumlar{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-    margin-top:30px;
-}
+const btn = document.getElementById("hesaplaBtn");
 
-.yorum{
+if (btn) {
+  btn.addEventListener("click", () => {
+    const ilce = document.getElementById("ilce").value;
+    const m2 = parseInt(document.getElementById("metrekare").value);
+    const sonuc = document.getElementById("sonuc");
 
-    background:rgba(255,255,255,.08);
+    if (ilce === "") {
+      sonuc.innerHTML = "⚠️ Lütfen ilçe seçiniz.";
+      return;
+    }
 
-    border:1px solid rgba(255,255,255,.15);
+    if (!m2 || m2 <= 0) {
+      sonuc.innerHTML = "⚠️ Lütfen metrekare giriniz.";
+      return;
+    }
 
-    backdrop-filter:blur(10px);
+    let fiyat = 1800;
 
-    border-radius:20px;
+    if (m2 > 50) fiyat += 500;
+    if (m2 > 100) fiyat += 700;
+    if (m2 > 150) fiyat += 900;
+    if (m2 > 200) fiyat += 1200;
 
-    padding:25px;
-
-    transition:.3s;
-
-}
-
-.yorum:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 15px 40px rgba(0,255,136,.35);
-
-}
-
-/* =========================
-   İLETİŞİM
-========================= */
-
-#iletisim{
-
-    text-align:center;
-
-}
-
-#iletisim p{
-
-    font-size:20px;
-
-    margin:10px 0;
-
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-
-    background:#0a0a0a;
-
-    text-align:center;
-
-    padding:30px;
-
-    color:#aaa;
-
-}
-
-/* =========================
-   MOBİL
-========================= */
-
-@media(max-width:768px){
-
-.hero-content h1{
-
-font-size:34px;
-
-}
-
-.hero-content p{
-
-font-size:18px;
-
-}
-
-.navbar{
-
-padding:15px;
-
-flex-direction:column;
-
-gap:12px;
-
-}
-
-.menu{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:12px;
-
-}
-
-.logo{
-
-font-size:24px;
-
-}
-
-.btn{
-
-width:100%;
-
-max-width:280px;
-
-text-align:center;
-
-}
-
-.cam-kutu{
-
-padding:25px;
-
-}
-
-h2{
-
-font-size:30px;
-
-}
-
+    sonuc.innerHTML = `
+      <h2>💰 ${fiyat.toLocaleString("tr-TR")} TL</h2>
+      <p>${ilce}</p>
+      <p>${m2} m²</p>
+      <p>Kesin fiyat ücretsiz keşif sonrası belirlenir.</p>
+    `;
+  });
 }
