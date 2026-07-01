@@ -1,122 +1,136 @@
-// =======================
-// SEZ İLAÇLAMA
-// script.js
-// =======================
+/* =========================
+   YORUMLAR
+========================= */
 
-// FİYAT HESAPLAMA
+.yorumlar{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
 
-const btn = document.getElementById("hesaplaBtn");
+.yorum{
 
-if (btn) {
+    background:rgba(255,255,255,.08);
 
-btn.addEventListener("click", () => {
+    border:1px solid rgba(255,255,255,.15);
 
-const ilce = document.getElementById("ilce").value;
+    backdrop-filter:blur(10px);
 
-const m2 = Number(document.getElementById("metrekare").value);
+    border-radius:20px;
 
-const sonuc = document.getElementById("sonuc");
+    padding:25px;
 
-if (ilce === "") {
-
-sonuc.innerHTML = "⚠️ İlçe seçiniz.";
-
-return;
+    transition:.3s;
 
 }
 
-if (m2 <= 0) {
+.yorum:hover{
 
-sonuc.innerHTML = "⚠️ Metrekare giriniz.";
+    transform:translateY(-8px);
 
-return;
-
-}
-
-let fiyat = 1800;
-
-if (m2 > 50) fiyat += 500;
-if (m2 > 100) fiyat += 700;
-if (m2 > 150) fiyat += 900;
-if (m2 > 200) fiyat += 1200;
-
-sonuc.innerHTML = `
-
-<h3>💰 ${fiyat.toLocaleString("tr-TR")} TL</h3>
-
-<p>${ilce}</p>
-
-<p>${m2} m²</p>
-
-`;
-
-});
-
-}// =======================
-// HAREKETLİ ZARARLILAR
-// =======================
-
-const bocek = document.getElementById("bocek");
-const fare = document.getElementById("fare");
-const sinek = document.getElementById("sinek");
-
-// Hamam böceği
-if (bocek) {
-
-let x = 40;
-let y = 180;
-
-let dx = 2;
-let dy = 1.5;
-
-setInterval(() => {
-
-x += dx;
-y += dy;
-
-if (x < 0 || x > window.innerWidth - 80) dx *= -1;
-if (y < 0 || y > window.innerHeight - 80) dy *= -1;
-
-bocek.style.left = x + "px";
-bocek.style.top = y + "px";
-
-}, 25);
+    box-shadow:0 15px 40px rgba(0,255,136,.35);
 
 }
 
-// Fare
-if (fare) {
+/* =========================
+   İLETİŞİM
+========================= */
 
-let fx = -100;
+#iletisim{
 
-setInterval(() => {
-
-fx += 5;
-
-if (fx > window.innerWidth + 100) {
-fx = -100;
-}
-
-fare.style.left = fx + "px";
-
-}, 20);
+    text-align:center;
 
 }
 
-// Sinek
-if (sinek) {
+#iletisim p{
 
-let a = 0;
+    font-size:20px;
 
-setInterval(() => {
+    margin:10px 0;
 
-a += 0.08;
+}
 
-sinek.style.left =
-200 + Math.sin(a * 2) * 140 + "px";
+/* =========================
+   FOOTER
+========================= */
 
-sinek.style.top =
-180 + Math.cos(a * 3) * 80 + "px";
+footer{
 
-}, 20);
+    background:#0a0a0a;
 
+    text-align:center;
+
+    padding:30px;
+
+    color:#aaa;
+
+}
+
+/* =========================
+   MOBİL
+========================= */
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:34px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+.navbar{
+
+padding:15px;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.menu{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:12px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+.btn{
+
+width:100%;
+
+max-width:280px;
+
+text-align:center;
+
+}
+
+.cam-kutu{
+
+padding:25px;
+
+}
+
+h2{
+
+font-size:30px;
+
+}
+
+}
